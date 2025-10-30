@@ -18,6 +18,9 @@
   "homepage": "https://github.com/Anastasiia-S-13/nodejs-hw#readme",
   "description": "",
   "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "eslint": "^9.38.0",
+    "globals": "^16.4.0",
     "nodemon": "^3.1.10"
   }
 }

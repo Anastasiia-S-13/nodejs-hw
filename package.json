@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-hw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/Anastasiia-S-13/nodejs-hw.git"
+  },
+  "keywords": [],
+  "author": "ANASTASIIA_ANISIMOVA <gorgona1597531597@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anastasiia-S-13/nodejs-hw/issues"
+  },
+  "homepage": "https://github.com/Anastasiia-S-13/nodejs-hw#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

@@ -1,7 +1,7 @@
 import { Schema } from 'mongoose';
 import { model } from 'mongoose';
 
-const notesSchema = new Schema(
+const noteSchema = Schema(
   {
     title: {
       type: String,
@@ -10,15 +10,20 @@ const notesSchema = new Schema(
     },
     content: {
       type: String,
+      required: false,
       trim: true,
-      timestamps: true,
+      default: '',
     },
     tag: {
       type: String,
-      default: 'Todo',
       enum: ['Work', 'Personal', 'Meeting', 'Shopping', 'Ideas', 'Travel', 'Finance', 'Health', 'Important', 'Todo'],
+      required: false,
+      default: 'Todo',
     },
   },
+  {
+    timestamps: true,
+    versionKey: false,
+  },
 );
-
-export const Note = model('Note', notesSchema);
+export const Note = model('Note', noteSchema);

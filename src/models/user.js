@@ -1,4 +1,4 @@
-import { model, Schema } from 'mongoose';
+import { Schema, model } from 'mongoose';
 
 const userSchema = Schema(
   {
@@ -15,6 +15,11 @@ const userSchema = Schema(
     password: {
       type: String,
       required: true,
+    },
+    avatar: {
+      type: String,
+      required: false,
+      default: "<https://ac.goit.global/fullstack/react/default-avatar.jpg>",
     },
   },
   {
